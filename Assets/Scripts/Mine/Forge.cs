@@ -6,12 +6,11 @@ using UnityEngine;
 
 public class Forge : MonoBehaviour
 {
-
     //cooldown var
     [Header("Cooldown")]
     [SerializeField][Range(0.5f, 20f)] float cooldownTime = 3f;
 
-    bool isCooldown = false;
+    bool isCooldown = true;
 
     void Start()
     {

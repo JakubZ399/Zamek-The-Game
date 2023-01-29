@@ -5,19 +5,11 @@ using UnityEngine;
 
 public class GoldMine : MonoBehaviour
 {
-    //resource bank script
-    ResourceBank resourceBank;
-
     //cooldown var
     [Header("Cooldown")]
     [SerializeField][Range(0.5f, 20f)] float cooldownTime = 2f;
 
-    bool isCooldown = false;
-
-    private void Awake()
-    {
-        resourceBank = FindObjectOfType<ResourceBank>();
-    }
+    bool isCooldown = true;
 
     void Start()
     {

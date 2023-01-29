@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class WheatFarm : MonoBehaviour
+public class Sawmill : MonoBehaviour
 {
     //cooldown var
     [Header("Cooldown")]
-    [SerializeField][Range(0.5f, 20f)] float cooldownTime = 2f;
+    [SerializeField][Range(0.5f, 20f)] float cooldownTime = 3f;
 
     bool isCooldown = true;
+
+    void Start()
+    {
+        Invoke("Cooldown", cooldownTime);
+    }
 
     private void OnMouseDown()
     {
@@ -18,12 +24,13 @@ public class WheatFarm : MonoBehaviour
 
     private void AddResource()
     {
-        if (!isCooldown)
+        if (ResourceBank.woodBank > 0 && isCooldown == false)
         {
-            ResourceBank.wheatBank++;
+            isCooldown = true;
+            ResourceBank.woodBank -= 1;
+            ResourceBank.pikeBank += 1;
             Invoke("Cooldown", cooldownTime);
         }
-        isCooldown = true;
     }
 
     private void Cooldown()

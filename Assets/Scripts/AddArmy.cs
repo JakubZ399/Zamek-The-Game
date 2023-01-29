@@ -48,9 +48,18 @@ public class AddArmy : MonoBehaviour
     }
     public void AddWizardAmount(TextMeshProUGUI armyAmount)
     {
-        if (ResourceBank.goldBank >= ResourceBank.wizardCostGold)
+        if (ResourceBank.goldBank >= ResourceBank.wizardCostGold && ResourceBank.ironBank > 0 && ResourceBank.woodBank > 1 &&
+            ResourceBank.wheatBank > 0 && ResourceBank.swordBank > 0 && ResourceBank.pikeBank > 0 && ResourceBank.horseBank > 0)
         {
             ResourceBank.goldBank -= ResourceBank.wizardCostGold;
+            ResourceBank.ironBank -= 1;
+            ResourceBank.woodBank -= 1;
+            ResourceBank.wheatBank -= 1;
+
+            ResourceBank.swordBank -= 1;
+            ResourceBank.pikeBank -= 1;
+            ResourceBank.horseBank -= 1;
+
             ResourceBank.wizardAmount++;
             armyAmount.text = ResourceBank.wizardAmount.ToString();
         }
