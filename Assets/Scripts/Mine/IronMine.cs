@@ -33,7 +33,7 @@ public class IronMine : MonoBehaviour
     {
         if (!isCooldown)
         {
-            resourceBank.ironBank++;
+            ResourceBank.ironBank++;
             Invoke("Cooldown", cooldownTime);
         }
         isCooldown = true;

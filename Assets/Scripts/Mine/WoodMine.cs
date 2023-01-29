@@ -28,7 +28,7 @@ public class WoodMine : MonoBehaviour
     {
         if (!isCooldown)
         {
-            resourceBank.woodBank++;
+            ResourceBank.woodBank++;
             Invoke("Cooldown", cooldownTime);
         }
         isCooldown = true;

@@ -33,7 +33,7 @@ public class GoldMine : MonoBehaviour
     {
         if (!isCooldown)
         {
-            resourceBank.goldBank++;
+            ResourceBank.goldBank++;
             Invoke("Cooldown", cooldownTime);
         }
         isCooldown = true;

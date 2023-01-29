@@ -28,7 +28,7 @@ public class WheatFarm : MonoBehaviour
     {
         if (!isCooldown)
         {
-            resourceBank.wheatBank++;
+            ResourceBank.wheatBank++;
             Invoke("Cooldown", cooldownTime);
         }
         isCooldown = true;

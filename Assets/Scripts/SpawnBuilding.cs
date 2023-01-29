@@ -12,6 +12,7 @@ public class SpawnBuilding : MonoBehaviour
     private bool isBuild = false;
     private bool isCooldown = false;
 
+    //spawn building
     private void OnMouseDown()
     {
         Debug.Log(Hammer.isHammer);
@@ -22,6 +23,7 @@ public class SpawnBuilding : MonoBehaviour
 
             Debug.Log("Build: " + buildingToSpawn);
 
+            //hammer cooldown
             Hammer.isCooldown = true;
             Invoke("Cooldown", hammerCooldownTime);
 
