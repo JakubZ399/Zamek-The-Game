@@ -1260,6 +1260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298891bd6e31d774eaf19e7419bc6ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeValue: 120
 --- !u!1001 &1981245406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1490,7 +1491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3293955345910090048, guid: 2d41bac2c6a5e1544832bde255bc0190, type: 3}
       propertyPath: timeValue
-      value: 5
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3293955345910090048, guid: 2d41bac2c6a5e1544832bde255bc0190, type: 3}
       propertyPath: timerText

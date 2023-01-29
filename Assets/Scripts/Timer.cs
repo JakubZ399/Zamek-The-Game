@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class Timer : LoadNextLevelScript
 {
@@ -33,7 +34,7 @@ public class Timer : LoadNextLevelScript
         {
             timeToDisplay = 0;
             Debug.Log("LOAD LEVEL");
-            LoadNextLevel();
+            LoadNextLevelAfterTime(3f);
         }
         else if (timeToDisplay > 0)
         {

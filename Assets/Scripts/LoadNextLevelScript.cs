@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadNextLevelScript : MonoBehaviour
 {
+    public void LoadNextLevelAfterTime(float timeToLoad)
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Invoke("LoadNextLevel", timeToLoad);
+    }
     public void LoadNextLevel()
     {
         //get active scene id
@@ -12,6 +17,7 @@ public class LoadNextLevelScript : MonoBehaviour
         int nextScene = currentScene + 1;
 
         //load next level
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(nextScene);
     }
 }
