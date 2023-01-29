@@ -144,5 +144,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingToSpawn: {fileID: 0}
   hammerCooldownTime: 15
-  hammerCursor: {fileID: 2800000, guid: a4c89e03d4afca744bfe670a5d744d92, type: 3}
-  hammerlightCursor: {fileID: 2800000, guid: 1112ac1825b9d56488d51ddf18c4555a, type: 3}
