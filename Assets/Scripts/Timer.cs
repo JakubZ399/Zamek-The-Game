@@ -7,11 +7,13 @@ using UnityEngine.UIElements;
 
 public class Timer : LoadNextLevelScript
 {
+    [SerializeField] GameObject noClickPanel;
     public float timeValue = 120;
     public TextMeshProUGUI timerText;
 
     private void Start()
     {
+        noClickPanel.SetActive(false);
         timerText = GetComponent<TextMeshProUGUI>();
     }
     void Update()
@@ -34,6 +36,7 @@ public class Timer : LoadNextLevelScript
         {
             timeToDisplay = 0;
             Debug.Log("LOAD LEVEL");
+            noClickPanel.SetActive(true);
             LoadNextLevelAfterTime(3f);
         }
         else if (timeToDisplay > 0)
