@@ -20,4 +20,23 @@ public class LoadNextLevelScript : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(nextScene);
     }
+
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ReloadCurrentLevel()
+    {
+        //get active scene id
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        int currentToReloadScene = currentScene - 1;
+
+        SceneManager.LoadScene(currentToReloadScene);
+    }
+
+    public void QuitApp()
+    {
+        Application.Quit();
+    }
 }

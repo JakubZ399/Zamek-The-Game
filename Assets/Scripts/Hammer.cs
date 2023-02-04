@@ -14,6 +14,12 @@ public class Hammer : MonoBehaviour, IPointerClickHandler
 
     private Vector2 cursorHotSpot = Vector2.zero;
 
+    private void Awake()
+    {
+        isHammer = false;
+        isCooldown = false;
+        Cursor.SetCursor(defalutCursor, cursorHotSpot, CursorMode.Auto);
+    }
     public void OnPointerClick(PointerEventData pointerEventData)
     {
         //Left Click

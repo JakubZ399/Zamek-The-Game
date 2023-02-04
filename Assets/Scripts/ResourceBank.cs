@@ -5,18 +5,29 @@ using UnityEngine;
 
 public class ResourceBank : MonoBehaviour
 {
-    //resource
+    //resource static
     [Header("Resource")]
-    public static int goldBank = 0;
-    public static int ironBank = 0;
-    public static int woodBank = 0;
-    public static int wheatBank = 0;
+    public static int goldBank;
+    public static int ironBank;
+    public static int woodBank;
+    public static int wheatBank;
 
     [Header("Weapon")]
-    public static int swordBank = 0;
-    public static int pikeBank = 0;
-    public static int horseBank = 0;
+    public static int swordBank;
+    public static int pikeBank;
+    public static int horseBank;
 
+    //resource
+    [Header("Resource")]
+    [SerializeField] private int goldBankStart = 0;
+    [SerializeField] private int ironBankStart = 0;
+    [SerializeField] private int woodBankStart = 0;
+    [SerializeField] private int wheatBankStart = 0;
+
+    [Header("Weapon")]
+    public static int swordBankStart = 0;
+    public static int pikeBankStart = 0;
+    public static int horseBankStart = 0;
 
     //army
     [Header("Army")]
@@ -41,13 +52,20 @@ public class ResourceBank : MonoBehaviour
     [Range(1, 50)] public int wizardCost;
 
 
-    //enemy army set
-    [Header("EnemyAmount")]
-    [Range(1, 100)] public static int enemyInfantryAmount = 1;
-    [Range(1, 100)] public static int enemySwordsmanAmount = 1;
-    [Range(1, 100)] public static int enemyPikemanAmount = 1;
-    [Range(1, 100)] public static int enemyCavalryAmount = 1;
-    [Range(1, 100)] public static int enemyWizardAmount = 1;
+    //enemy army set static
+    public static int enemyInfantryAmount;
+    public static int enemySwordsmanAmount;
+    public static int enemyPikemanAmount;
+    public static int enemyCavalryAmount;
+    public static int enemyWizardAmount;
+
+    //enemy army set in inspector
+    [Header("Enemy Amount On Level Start")]
+    [SerializeField][Range(1, 100)] private int enemyInfantryAmountStart = 10;
+    [SerializeField][Range(1, 100)] private int enemySwordsmanAmountStart = 0;
+    [SerializeField][Range(1, 100)] private int enemyPikemanAmountStart = 0;
+    [SerializeField][Range(1, 100)] private int enemyCavalryAmountStart = 0;
+    [SerializeField][Range(1, 100)] private int enemyWizardAmountStart = 0;
 
     private void Awake()
     {
@@ -56,6 +74,20 @@ public class ResourceBank : MonoBehaviour
         pikemanCostGold = pikemanCost;
         cavalryCostGold = cavalryCost;
         wizardCostGold = wizardCost;
+
+        enemyInfantryAmount = enemyInfantryAmountStart;
+        enemySwordsmanAmount = enemySwordsmanAmountStart;
+        enemyPikemanAmount = enemyPikemanAmountStart;
+        enemyCavalryAmount = enemyCavalryAmountStart;
+        enemyWizardAmount = enemyWizardAmountStart;
+
+        goldBank = goldBankStart;
+        ironBank = ironBankStart;
+        woodBank = woodBankStart;
+        wheatBank = wheatBankStart;
+        swordBank = swordBankStart;
+        pikeBank = pikeBankStart;
+        horseBank = horseBankStart;
     }
 
     private void Start()

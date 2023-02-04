@@ -242,6 +242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingToSpawn: {fileID: 0}
-  hammerCooldownTime: 15
+  hammerCooldownTime: 10
   buttonResource: {fileID: 0}
   buttonBuild: {fileID: 0}

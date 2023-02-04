@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class SpawnBuilding : MonoBehaviour
 {
     [SerializeField] private GameObject buildingToSpawn;
-    [SerializeField] private float hammerCooldownTime = 15;
+    [SerializeField] private float hammerCooldownTime = 10;
     public GameObject buttonResource;
     public GameObject buttonBuild;
 
@@ -16,6 +16,7 @@ public class SpawnBuilding : MonoBehaviour
 
     private void Start()
     {
+        isBuild = false;
         buttonResource.SetActive(false);
         buttonBuild.SetActive(true);
     }
@@ -31,13 +32,9 @@ public class SpawnBuilding : MonoBehaviour
             buttonBuild.SetActive(false);
             isBuild = true;
 
-            Debug.Log("Build: " + buildingToSpawn);
-
             //hammer cooldown
             Hammer.isCooldown = true;
             Invoke("Cooldown", hammerCooldownTime);
-
-            Debug.Log("Hammer Cooldown: " + hammerCooldownTime);
 
             gameObject.SetActive(false);
         }
@@ -45,7 +42,6 @@ public class SpawnBuilding : MonoBehaviour
 
     private void Cooldown()
     {
-        Debug.Log("No Hammer Cooldown");
         Hammer.isCooldown = false;
     }
 }
