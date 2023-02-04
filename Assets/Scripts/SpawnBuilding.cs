@@ -38,6 +38,8 @@ public class SpawnBuilding : MonoBehaviour
             Invoke("Cooldown", hammerCooldownTime);
 
             Debug.Log("Hammer Cooldown: " + hammerCooldownTime);
+
+            gameObject.SetActive(false);
         }
     }
 

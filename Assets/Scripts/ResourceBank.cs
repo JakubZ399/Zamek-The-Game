@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ResourceBank : MonoBehaviour
 {
+    //resource
     [Header("Resource")]
     public static int goldBank = 0;
     public static int ironBank = 0;
@@ -16,6 +17,8 @@ public class ResourceBank : MonoBehaviour
     public static int pikeBank = 0;
     public static int horseBank = 0;
 
+
+    //army
     [Header("Army")]
     public static int infantryAmount = 0;
     public static int infantryCostGold;
@@ -37,6 +40,15 @@ public class ResourceBank : MonoBehaviour
     public static int wizardCostGold;
     [Range(1, 50)] public int wizardCost;
 
+
+    //enemy army set
+    [Header("EnemyAmount")]
+    [Range(1, 100)] public static int enemyInfantryAmount = 1;
+    [Range(1, 100)] public static int enemySwordsmanAmount = 1;
+    [Range(1, 100)] public static int enemyPikemanAmount = 1;
+    [Range(1, 100)] public static int enemyCavalryAmount = 1;
+    [Range(1, 100)] public static int enemyWizardAmount = 1;
+
     private void Awake()
     {
         infantryCostGold = infantryCost;
@@ -44,6 +56,15 @@ public class ResourceBank : MonoBehaviour
         pikemanCostGold = pikemanCost;
         cavalryCostGold = cavalryCost;
         wizardCostGold = wizardCost;
+    }
+
+    private void Start()
+    {
+        infantryAmount = 0;
+        swordsmanAmount = 0;
+        pikemanAmount = 0;
+        cavalryAmount = 0;
+        wizardAmount = 0;
     }
 }
 

@@ -193,6 +193,11 @@ MonoBehaviour:
   pikemanCost: 1
   cavalryCost: 1
   wizardCost: 2
+  enemyInfatryAmount: 1
+  enemySwordsmanAmount: 1
+  enemyPikeAmount: 1
+  enemyCavalryAmount: 1
+  enemyWizardAmount: 1
 --- !u!1001 &156613042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1518,7 +1523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3293955345910090048, guid: 2d41bac2c6a5e1544832bde255bc0190, type: 3}
       propertyPath: timeValue
-      value: 120
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4612227768739219253, guid: 2d41bac2c6a5e1544832bde255bc0190, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
