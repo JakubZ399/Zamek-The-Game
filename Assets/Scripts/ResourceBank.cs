@@ -25,9 +25,9 @@ public class ResourceBank : MonoBehaviour
     [SerializeField] private int wheatBankStart = 0;
 
     [Header("Weapon")]
-    public static int swordBankStart = 0;
-    public static int pikeBankStart = 0;
-    public static int horseBankStart = 0;
+    [SerializeField] private int swordBankStart = 0;
+    [SerializeField] private int pikeBankStart = 0;
+    [SerializeField] private int horseBankStart = 0;
 
     //army
     [Header("Army")]

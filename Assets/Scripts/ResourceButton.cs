@@ -37,7 +37,6 @@ public class ResourceButton : MonoBehaviour
         Invoke("CooldownSword", cooldownTimeSword);
         Invoke("CooldownPike", cooldownTimePike);
         Invoke("CooldownHorse", cooldownTimeHorse);
-
     }
 
     //add resource method

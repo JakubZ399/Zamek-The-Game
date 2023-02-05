@@ -14,11 +14,22 @@ public class SpawnBuilding : MonoBehaviour
     private bool isBuild = false;
     private bool isCooldown = false;
 
+    private bool isOn;
+
     private void Start()
     {
-        isBuild = false;
-        buttonResource.SetActive(false);
-        buttonBuild.SetActive(true);
+        if (buttonBuild.activeInHierarchy)
+        {
+            isBuild = false;
+            buttonResource.SetActive(false);
+            buttonBuild.SetActive(true);
+        }
+        else
+        {
+            isBuild = true;
+            buttonResource.SetActive(false);
+            buttonBuild.SetActive(false);
+        }
     }
 
     //spawn building

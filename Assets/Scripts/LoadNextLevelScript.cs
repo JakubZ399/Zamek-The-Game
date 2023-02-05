@@ -63,5 +63,8 @@ public class LoadNextLevelScript : MonoBehaviour
         Application.Quit();
     }
 
-    
+    public void LoadLevelByName(string levelName)
+    {
+        SceneManager.LoadScene(levelName);
+    }
 }

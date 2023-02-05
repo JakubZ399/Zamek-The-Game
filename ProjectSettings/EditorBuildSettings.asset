@@ -6,18 +6,72 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Menu/MainMenu.unity
     guid: 3f73758a9a239c745b75548535953458
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Level 1 Battle.unity
+    path: Assets/Scenes/BattleLevel/Level 1 Battle.unity
+    guid: 1826154f667b3544eadd8138b9f90fcb
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: b16d2de799eb69a4ba8229c0c0cd2150
+  - enabled: 1
+    path: Assets/Scenes/BattleLevel/Level 2 Battle.unity
+    guid: 0e0ccac75ca413b4f84daff65eea3781
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 525389c3ca9916e40af8083e36543e76
+  - enabled: 1
+    path: Assets/Scenes/BattleLevel/Level 3 Battle.unity
+    guid: 45ae85b38b1816c48ab81ec510c02403
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: ace383a949990f648a22930a95585931
+  - enabled: 1
+    path: Assets/Scenes/BattleLevel/Level 4 Battle.unity
+    guid: e1556aa17e2f12149b71e3a98c7ff425
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: 756ca410f58ba0c409eefceee5e1e0d2
+  - enabled: 1
+    path: Assets/Scenes/BattleLevel/Level 5 Battle.unity
     guid: d746bc0abc5cff340a090e323d6b2e71
   - enabled: 1
-    path: Assets/Scenes/TEST.unity
-    guid: e6129759e37eb2943a6e065149262a19
+    path: Assets/Scenes/Level 6.unity
+    guid: 5f6ae0114b8d54b49bd84877d0b913d0
   - enabled: 1
-    path: Assets/Scenes/TESTBATTLE2.unity
-    guid: 7fec77e465c26fe4ea550fd7646a4c8e
+    path: Assets/Scenes/BattleLevel/Level 6 Battle.unity
+    guid: 5fb2868ed6f8e314aa6eb5b019c40891
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: 0ddf2e719b8999648bafee2edd9cda20
+  - enabled: 1
+    path: Assets/Scenes/BattleLevel/Level 7 Battle.unity
+    guid: 73fc9f09c4ccb9148a05e7038242bec4
+  - enabled: 1
+    path: Assets/Scenes/Level 8.unity
+    guid: 07a197b1bf07cfe4f85fb8a8f9906f15
+  - enabled: 1
+    path: Assets/Scenes/BattleLevel/Level 8 Battle.unity
+    guid: a01554ab7339d484d9b62202f662af95
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: f039d95e715fa3b41b3018e89cc42201
+  - enabled: 1
+    path: Assets/Scenes/BattleLevel/Level 9 Battle.unity
+    guid: c54c018b2b8ede4448e075fedf435a2a
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: dc1a8cae7de8f83488a0dbe17d73df72
+  - enabled: 1
+    path: Assets/Scenes/BattleLevel/Level 10 Battle.unity
+    guid: 1788d238bf1af5249a239b5a259457ad
+  - enabled: 1
+    path: Assets/Scenes/Menu/CreditsMenu.unity
+    guid: a020ebc2f9a6f674189cf80559ba9e40
+  - enabled: 1
+    path: Assets/Scenes/Menu/LevelMenu.unity
+    guid: ee8d30862026145418dbe2511116c226
   m_configObjects: {}

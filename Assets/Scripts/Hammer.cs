@@ -42,17 +42,21 @@ public class Hammer : MonoBehaviour, IPointerClickHandler
 
     private void Update()
     {
-        if (isCooldown)
+        if (isCooldown && gameObject.GetComponent<Button>() != null)
         {
             var colors = GetComponent<Button>().colors;
             colors.normalColor = Color.red;
             GetComponent<Button>().colors = colors;
         }
-        else
+        if (!isCooldown && gameObject.GetComponent<Button>() != null)
         {
             var colors = GetComponent<Button>().colors;
             colors.normalColor = Color.white;
             GetComponent<Button>().colors = colors;
+        }
+        else
+        {
+            
         }
     }
 }

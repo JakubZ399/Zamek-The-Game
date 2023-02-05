@@ -14,7 +14,7 @@ public class BattleResult : MonoBehaviour
     public int swordsmanScore = 20;
     public int pikemanScore = 15;
     public int cavalryScore = 25;
-    public int wizardScore = 50;
+    public int wizardScore = 100;
 
     public int pikemanVsCavalryBonus = 5;
     public int cavalryVsSwordsmanBonus = 10;

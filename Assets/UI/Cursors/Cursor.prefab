@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36979b5350e94c040a8e59f5e110c3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defalutCursor: {fileID: 0}
-  hammerCursor: {fileID: 0}
+  defalutCursor: {fileID: 2800000, guid: 0ced08416c2dbd544b1007d6ccaf758a, type: 3}
+  hammerCursor: {fileID: 2800000, guid: a4c89e03d4afca744bfe670a5d744d92, type: 3}
