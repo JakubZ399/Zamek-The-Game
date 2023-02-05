@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Hammer : MonoBehaviour, IPointerClickHandler
 {
@@ -36,6 +37,22 @@ public class Hammer : MonoBehaviour, IPointerClickHandler
             isHammer = false;
             Cursor.SetCursor(defalutCursor, cursorHotSpot, CursorMode.Auto);
             Debug.Log("No Hammer" + isHammer);
+        }
+    }
+
+    private void Update()
+    {
+        if (isCooldown)
+        {
+            var colors = GetComponent<Button>().colors;
+            colors.normalColor = Color.red;
+            GetComponent<Button>().colors = colors;
+        }
+        else
+        {
+            var colors = GetComponent<Button>().colors;
+            colors.normalColor = Color.white;
+            GetComponent<Button>().colors = colors;
         }
     }
 }

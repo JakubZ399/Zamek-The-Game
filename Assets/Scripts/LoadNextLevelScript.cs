@@ -5,6 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class LoadNextLevelScript : MonoBehaviour
 {
+    //
+    //debug
+    //
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.E)) 
+        {
+            LoadNextLevel();
+        }
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            ReloadCurrentLevel();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            MainMenuButton();
+        }
+    }
+
+    //
+    //
+    //
     public void LoadNextLevelAfterTime(float timeToLoad)
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -39,4 +62,6 @@ public class LoadNextLevelScript : MonoBehaviour
     {
         Application.Quit();
     }
+
+    
 }

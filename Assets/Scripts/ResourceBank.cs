@@ -61,11 +61,11 @@ public class ResourceBank : MonoBehaviour
 
     //enemy army set in inspector
     [Header("Enemy Amount On Level Start")]
-    [SerializeField][Range(1, 100)] private int enemyInfantryAmountStart = 10;
-    [SerializeField][Range(1, 100)] private int enemySwordsmanAmountStart = 0;
-    [SerializeField][Range(1, 100)] private int enemyPikemanAmountStart = 0;
-    [SerializeField][Range(1, 100)] private int enemyCavalryAmountStart = 0;
-    [SerializeField][Range(1, 100)] private int enemyWizardAmountStart = 0;
+    [SerializeField][Range(0, 100)] private int enemyInfantryAmountStart = 10;
+    [SerializeField][Range(0, 100)] private int enemySwordsmanAmountStart = 0;
+    [SerializeField][Range(0, 100)] private int enemyPikemanAmountStart = 0;
+    [SerializeField][Range(0, 100)] private int enemyCavalryAmountStart = 0;
+    [SerializeField][Range(0, 100)] private int enemyWizardAmountStart = 0;
 
     private void Awake()
     {
