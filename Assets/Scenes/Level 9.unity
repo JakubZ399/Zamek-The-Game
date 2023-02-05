@@ -1625,31 +1625,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3451052962129047814, guid: 282a655c901291345bfd41f098b2731d, type: 3}
       propertyPath: goldBankStart
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451052962129047814, guid: 282a655c901291345bfd41f098b2731d, type: 3}
       propertyPath: ironBankStart
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451052962129047814, guid: 282a655c901291345bfd41f098b2731d, type: 3}
       propertyPath: pikeBankStart
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451052962129047814, guid: 282a655c901291345bfd41f098b2731d, type: 3}
       propertyPath: woodBankStart
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451052962129047814, guid: 282a655c901291345bfd41f098b2731d, type: 3}
       propertyPath: horseBankStart
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451052962129047814, guid: 282a655c901291345bfd41f098b2731d, type: 3}
       propertyPath: swordBankStart
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451052962129047814, guid: 282a655c901291345bfd41f098b2731d, type: 3}
       propertyPath: wheatBankStart
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451052962129047814, guid: 282a655c901291345bfd41f098b2731d, type: 3}
       propertyPath: enemyWizardAmountStart
