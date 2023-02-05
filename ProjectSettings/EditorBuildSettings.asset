@@ -68,10 +68,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BattleLevel/Level 10 Battle.unity
     guid: 1788d238bf1af5249a239b5a259457ad
-  - enabled: 1
-    path: Assets/Scenes/Menu/CreditsMenu.unity
-    guid: a020ebc2f9a6f674189cf80559ba9e40
-  - enabled: 1
-    path: Assets/Scenes/Menu/LevelMenu.unity
-    guid: ee8d30862026145418dbe2511116c226
   m_configObjects: {}
